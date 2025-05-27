@@ -147,6 +147,7 @@
 
       const totalCost1 = p1 * q1;
       const totalCost2 = p2 * q2;
+      const totalInvestment = totalCost1 + totalCost2;
       const totalShares = q1 + q2;
       const averagePrice = (totalCost1 + totalCost2) / totalShares;
 
@@ -155,6 +156,7 @@
         <p>🧾 <strong>First Buy Total:</strong> ₹${totalCost1.toFixed(2)}</p>
         <p>🧾 <strong>Second Buy Total:</strong> ₹${totalCost2.toFixed(2)}</p>
         <p>📌 <strong>Total Shares:</strong> ${totalShares} (New Only: ${q2})</p>
+        <p>💰 <strong>Total Investment:</strong> ₹${totalInvestment.toFixed(2)}</p>
         <p>📈 <strong>Average Price (Overall):</strong> ₹${averagePrice.toFixed(2)}</p>
       `;
     }
